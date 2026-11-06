@@ -3,11 +3,13 @@
 // import ShopHeader from './components/ShopHeader.vue'
 // import ShopFooter from './components/ShopFooter.vue'
 
-import Main from './Main.vue'
+// import Main from './Main.vue'
+import UserView from './views/UserView.vue'
 </script>
 
 <template>
   <!-- <ShopHeader />
   <ShopFooter /> -->
-  <Main />
+  <!-- <Main /> -->
+  <UserView />
 </template>

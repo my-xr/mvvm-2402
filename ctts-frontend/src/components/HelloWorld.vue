@@ -1,20 +1,13 @@
 <template>
-  <div :style="{ color: textColor, fontSize: size + 'px' }">你好</div>
-
-  {{ size }}
+  {{ props.msg }}
 </template>
-
-
 <script setup>
-import { ref } from 'vue'
 
-const textColor = ref('blue')  // {value: blue}
-const size = ref(24)
+const props = defineProps({
+  msg: { type: String, default: 'abc' }
+})
 
-textColor.value = 'red'
-size.value = 48
-
+const handleClick = () => {
+}
 
 </script>
-
-<style scoped></style>

@@ -1,14 +1,15 @@
 <template>
     <div class="shop-page">
-        <ShopHeader :cart-count="cartCount" @search="handleSearch" />
-
+        <ShopHeader :cartCount="cartCount" @search="handleSearch" />
         <ProductList :products="filteredProducts" @add-to-cart="addToCart" />
-
+        <!-- <ProductListData /> -->
         <ShopFooter />
     </div>
 </template>
 
 <script setup>
+import ProductListData from './components/ProductListData.vue'
+
 import { ref, computed } from 'vue'
 import ShopHeader from './components/ShopHeader.vue'
 import ProductList from './components/ProductList.vue'

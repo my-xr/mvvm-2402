@@ -1,12 +1,13 @@
 <template>
-  <Lesson name="11231231" />
-  <!-- <HelloWorld /> -->
+  <div>
+    <Counter @change="handleClick" :init="count" "/>
+  </div>
 </template>
-
 <script setup>
-// import HelloWorld from './components/HelloWorld.vue'
-// import HelloWorld from './components/Hello2.vue'
+import { ref } from "vue"
+import Counter from "./components/Counter.vue"
 
-// import Lesson from './components/Lesson4.vue'
-import Lesson from './components/Demo6.vue'
+const count = ref(0)
+const handleClick = () => {
+}
 </script>

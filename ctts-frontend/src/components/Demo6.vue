@@ -1,5 +1,6 @@
 <template>
     <div class="app">
+        <HelloWorld msg="Hi" />
         <LoginForm :init-name="defaultName" @submit="onLogin" />
         <p v-if="msg">{{ msg }}</p>
     </div>
